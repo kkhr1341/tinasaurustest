@@ -1,11 +1,10 @@
 import React from "react";
-import { defineConfig, TextField } from "tinacms";
-import { ReferenceField } from "tinacms";
+import { defineConfig, ReferenceField, TextField } from "tinacms";
+import title from "title";
 import { FeaturesBlockTemplate } from "../src/components/Features/template";
 import { HeroBlockTemplate } from "../src/components/Hero/template";
 import { MDXTemplates } from "../src/theme/template";
 import { docusaurusDate, titleFromSlug } from "../util";
-import title from "title";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -820,7 +819,7 @@ const PagesCollection = {
 
 export default defineConfig({
   branch,
-  clientId: "ec80bfa2-69ad-4167-af8a-964c9609c8bf", // Get this from tina.io
+  clientId: "6eba1b6f-5629-4d3b-8e5c-1fce208e6398", // Get this from tina.io
   token: "dd362ccf58b166176f0b818999c405cd90b8d1fb", // Get this from tina.io
   build: {
     outputFolder: "admin",
